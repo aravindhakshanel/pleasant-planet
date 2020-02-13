@@ -17,10 +17,19 @@ export default class Elements extends React.Component {
             slidesToScroll: 1
           };
         return (
-            <Slider {...settings}>
+            
+            <Layout {...this.props}>
+
+                <header id="header">
+                    <h1>{_.get(this.props, 'pageContext.frontmatter.title')}</h1>
+                </header>
+                <section id="main" className="wrapper alt">
+                    <div className="inner">
+                        <h2 id="content">Sample Content</h2>
+                        <Slider {...settings}>
             <div>
-              <h3>1sjakhdkjshakjd</h3>
-            </div>
+               <h3>1sjakhdkjshakjd</h3>
+                    </div>
             <div>
               <h3>2</h3>
             </div>
@@ -37,13 +46,6 @@ export default class Elements extends React.Component {
               <h3>6</h3>
             </div>
           </Slider>
-            <Layout {...this.props}>
-                <header id="header">
-                    <h1>{_.get(this.props, 'pageContext.frontmatter.title')}</h1>
-                </header>
-                <section id="main" className="wrapper alt">
-                    <div className="inner">
-                        <h2 id="content">Sample Content</h2>
                         <p>Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing.</p>
                         <div className="row">
                             <div className="col-6 col-12-small">
