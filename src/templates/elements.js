@@ -19,7 +19,7 @@ export default class Elements extends React.Component {
         return (
             <Slider {...settings}>
             <div>
-              <h3>1</h3>
+              <h3>1sjakhdkjshakjd</h3>
             </div>
             <div>
               <h3>2</h3>
