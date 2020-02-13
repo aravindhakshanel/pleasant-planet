@@ -14,7 +14,7 @@ export default class SimpleSlider extends React.Component {
     return (
       <Slider {...settings}>
         <div>
-          <img src="https://wowslider.com/sliders/demo-23/data1/images/landscape1344620.jpg"></img>
+          <h3>1</h3>
         </div>
         <div>
           <h3>2</h3>
